@@ -6,9 +6,9 @@ spring:
   thymeleaf:
     cache: false
   rabbitmq:
-    host: 192.168.82.100
-    username: leyou
-    password: leyou
+    host: localhost
+    username: guest
+    password: guest
     virtual-host: /leyou
 eureka:
   client:
