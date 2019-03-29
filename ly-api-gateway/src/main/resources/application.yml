@@ -21,7 +21,7 @@ zuul:
     order-service: /order-service/**
     upload-service:
       path: /upload/**
-      service: upload-service
+      serviceId: upload-service
       strip-prefix: false
     search-service: /search/**
   sensitive-headers:
