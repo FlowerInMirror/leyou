@@ -7,15 +7,17 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 import tk.mybatis.spring.annotation.MapperScan;
 
 /**
- * @author bystander
- * @date 2018/10/4
+ * 订单服务
+ * @author zhangpan
+ * @date 2018/4/5
+ * @SpringCloudApplication
  */
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableFeignClients
 @MapperScan("com.leyou.order.mapper")
-public class LyOrderApplication {
+public class OrderApplication {
     public static void main(String[] args) {
-        SpringApplication.run(LyOrderApplication.class, args);
+        SpringApplication.run(OrderApplication.class, args);
     }
 }

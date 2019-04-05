@@ -1,18 +1,21 @@
-package com.leyou.cart;
+package com.leyou.user;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import tk.mybatis.spring.annotation.MapperScan;
 
 /**
- * @author bystander
- * @date 2018/10/3
+ * 用户服务
+ * @author zhangpan
+ * @date 2018/4/5
  */
 @SpringBootApplication
 @EnableDiscoveryClient
-public class LyCartApplication {
+@MapperScan(value = "com.leyou.user.mapper")
+public class UserApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(LyCartApplication.class, args);
+        SpringApplication.run(UserApplication.class);
     }
 }

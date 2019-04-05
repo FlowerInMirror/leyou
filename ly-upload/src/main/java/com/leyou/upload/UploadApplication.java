@@ -1,17 +1,20 @@
-package com.leyou.sms;
+package com.leyou.upload;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 /**
- * @author bystander
- * @date 2018/9/29
+ * 文件上传服务
+ * @author zhangpan
+ * @date 2018/4/5
  */
 @SpringBootApplication(exclude = DataSourceAutoConfiguration.class)
-public class LySmsApplication {
+@EnableDiscoveryClient
+public class UploadApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(LySmsApplication.class);
+        SpringApplication.run(UploadApplication.class);
     }
 }

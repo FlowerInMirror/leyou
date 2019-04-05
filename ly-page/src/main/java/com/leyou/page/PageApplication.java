@@ -1,19 +1,21 @@
-package com.leyou.upload;
+package com.leyou.page;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
- * @author bystander
- * @date 2018/9/16
+ * 分页查询服务
+ * @author zhangpan
+ * @date 2018/4/5
  */
-@SpringBootApplication(exclude = DataSourceAutoConfiguration.class)
+@EnableFeignClients
 @EnableDiscoveryClient
-public class LyUploadApplication {
-
+@SpringBootApplication(exclude = DataSourceAutoConfiguration.class)
+public class PageApplication {
     public static void main(String[] args) {
-        SpringApplication.run(LyUploadApplication.class);
+        SpringApplication.run(PageApplication.class);
     }
 }

@@ -7,16 +7,18 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 
 /**
- * @author bystander
- * @date 2018/9/13
+ * 网关服务
+ * @author zhangpan
+ * @date 2018/4/5
+ * @SpringCloudApplication
  */
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableCircuitBreaker
 @EnableZuulProxy
-public class LyApiGateway {
+public class ApiGateway {
 
     public static void main(String[] args) {
-        SpringApplication.run(LyApiGateway.class,args);
+        SpringApplication.run(ApiGateway.class,args);
     }
 }

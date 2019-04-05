@@ -5,14 +5,15 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
 /**
- * @author bystander
- * @date 2018/9/13
+ * eureka服务注册器
+ * @author zhangpan
+ * @date 2018/4/5
  */
 @SpringBootApplication
 @EnableEurekaServer
-public class LyRegistry {
+public class Registry {
 
     public static void main(String[] args) {
-        SpringApplication.run(LyRegistry.class);
+        SpringApplication.run(Registry.class);
     }
 }

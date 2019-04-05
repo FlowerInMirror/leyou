@@ -6,15 +6,16 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import tk.mybatis.spring.annotation.MapperScan;
 
 /**
- * @author bystander
- * @date 2018/9/13
+ * 商品服务
+ * @author zhangpan
+ * @date 2018/4/5
  */
 @SpringBootApplication
 @EnableEurekaClient
 @MapperScan("com.leyou.service.mapper")
-public class LyItemService {
+public class ItemService {
 
     public static void main(String[] args) {
-        SpringApplication.run(LyItemService.class);
+        SpringApplication.run(ItemService.class);
     }
 }
